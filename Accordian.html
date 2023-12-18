@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Include Font Awesome directly from the official website -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="modal.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Accordion Example</title>
+</head>
+
+<body>
+    <div class="custom-container">
+        <div class="accordion-item" id="getStartedAccordionItem">
+            <h2 class="accordion-header" id="flush-headingGetStarted">
+                <button class="accordion-button collapsed starter" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseGetStarted" aria-expanded="false"
+                    aria-controls="flush-collapseGetStarted">
+                     Get Started with Loom
+                </button>
+            </h2>
+            <div id="flush-collapseGetStarted" class="accordion-collapse collapse"
+                aria-labelledby="flush-headingGetStarted" data-bs-parent="#getStartedAccordionItem">
+                <div class="accordion-body">
+                    <div class="stepper">
+                        <p>Get started checklist
+                            <span class="caret"><b>^</b></span>
+                        </p>
+                        <ul type="none">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    
+
+                        <!-- Accordion Item 1: Download Loom -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingDownloadLoom">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseDownloadLoom" aria-expanded="false"
+                                    aria-controls="flush-collapseDownloadLoom">
+                                    <i class="fas fa-circle-check"></i> Download Loom
+                                </button>
+                            </h2>
+                            <div id="flush-collapseDownloadLoom" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingDownloadLoom" data-bs-parent="#infoAccordion">
+                                <div class="accordion-body">
+                                    <p>Install the Chrome extension to record.</p>
+                                    <div class='custom-ui'><i class="fab fa-chrome me-2"></i>Install Loom Extension</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 2: Create an account -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingCreateAccount">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseCreateAccount" aria-expanded="false"
+                                    aria-controls="flush-collapseCreateAccount">
+                                    <i class="fas fa-circle-check"></i> Create an account
+                                </button>
+                            </h2>
+                            <div id="flush-collapseCreateAccount" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingCreateAccount" data-bs-parent="#infoAccordion">
+                                <div class="accordion-body">
+                                    <!-- Content for "Create an account" goes here -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 3: Record a Short Video -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingRecordVideo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseRecordVideo" aria-expanded="false"
+                                    aria-controls="flush-collapseRecordVideo">
+                                    <i class="fas fa-circle-check"></i> Record a Short Video
+                                </button>
+                            </h2>
+                            <div id="flush-collapseRecordVideo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingRecordVideo" data-bs-parent="#infoAccordion">
+                                <div class="accordion-body">
+                                    <p>Record a short video to share with your teammate. Try introducing yourself or replacing a
+                                        meeting.</p>
+                                    <div class='custom-ui'><i class="fas fa-video me-2"></i>Start recording</div>
+                                    <div><i class="far fa-circle-play me-2"></i>Learn how to record</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 4: Share Video -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingShareVideo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseShareVideo" aria-expanded="false"
+                                    aria-controls="flush-collapseShareVideo">
+                                    <i class="fas fa-circle-check"></i> Share Video
+                                </button>
+                            </h2>
+                            <div id="flush-collapseShareVideo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingShareVideo" data-bs-parent="#infoAccordion">
+                                <div class="accordion-body">
+                                    <p>Now it's time to get some views. Try sharing your last video.</p>
+                                    <div class='custom-ui'><i class="fas fa-link me-2"></i>Copy last video link</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 5: Get Views -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingGetViews">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseGetViews" aria-expanded="false"
+                                    aria-controls="flush-collapseGetViews">
+                                    <i class="fas fa-circle-check"></i> Get Views
+                                </button>
+                            </h2>
+                            <div id="flush-collapseGetViews" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingGetViews" data-bs-parent="#infoAccordion">
+                                <div class="accordion-body">
+                                    <p>Slack, message, or email your viewers to remind them about your Loom.</p>
+                                    <div class='custom-ui'>Understand video engagement</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 6: Invite Teammate -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingInviteTeammate">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseInviteTeammate" aria-expanded="false"
+                                    aria-controls="flush-collapseInviteTeammate">
+                                    <div class="circle"></div> Invite Teammate
+                                </button>
+                            </h2>
+                            <div id="flush-collapseInviteTeammate" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingInviteTeammate" data-bs-parent="#infoAccordion">
+                                <div class="accordion-body">
+                                    <p>Invite a teammate to collaborate on your videos and share your videos more easily.</p>
+                                    <div class='custom-ui'><i class="fas fa-users me-2"></i>Invite a teammate</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add more accordion items as needed -->
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="modal.js"></script>
+</body>
+
+</html>

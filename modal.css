@@ -1,0 +1,94 @@
+/* Custom CSS to limit the width */
+.custom-container {
+    max-width: 400px;
+    margin: auto;
+    font-size: 14px;
+}
+
+/* Custom CSS to remove the border and add background color to the active item */
+.accordion-item {
+    border: none;
+}
+
+.accordion-button {
+    border: none;
+}
+
+.accordion-button[data-bs-target="#flush-collapseCreateAccount"]::after {
+    display: none;
+    /* Remove the caret icon only for "Create an account" */
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    outline: none;
+    /* Remove the blue outline on focus */
+}
+
+.accordion-item.active {
+    background-color: #fff;
+    /* Optional: Set the background color for the active item */
+}
+
+.starter {
+    background-color: lightblue;
+}
+
+.custom-ui {
+    background-color: #fff;
+    border: 1px solid #969494;
+    color: #000;
+    padding: 3px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: rgb(201, 238, 250);
+    border: 2px solid rgb(144, 202, 221);
+    display: inline-block;
+}
+
+/* Custom CSS to style the icon */
+.fa-circle-check {
+    color: #adaaaa;
+    margin-right: 8px;
+    /* Adjust the margin as needed */
+}
+
+.stepper {
+    background-color: rgb(189, 219, 253);
+    color: rgb(58, 57, 57);
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+.stepper ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.stepper ul li {
+    height: 5px;
+    width: 30px;
+    background: rgb(86, 159, 243);
+    margin-right: 10px;
+}
+
+.stepper p {
+    text-align: start;
+}
+
+.stepper ul li:last-child {
+    background-color: rgb(158, 200, 248);
+}
+
+.stepper ul li:first-child {
+    border-left: 2px;
+}
